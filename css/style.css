@@ -497,7 +497,8 @@ body {
 }
 .backdrop.is-hidden {
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
+  visibility: hidden; 
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
@@ -518,6 +519,8 @@ body {
   transform: scale(1) translate(-50%, -50%);
   transition: transform var(--timing-cubic-bezier),
   opacity var(--timing-cubic-bezier);
+
+  cursor: pointer;
 }
 .close-modal {
   display: flex;
