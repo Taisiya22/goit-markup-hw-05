@@ -636,4 +636,5 @@ body {
 .portfolio-link:hover .thumb-description,
 .portfolio-link:focus .thumb-description {
   transform: translateY(0);
+  transition: transform var(--timing-cubic-bezier);
 }
