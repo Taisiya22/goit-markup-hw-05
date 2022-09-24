@@ -591,16 +591,18 @@ body {
 }
 .portfolio-list .item {
   flex-basis: calc((100% - 60px) / 3);
+  
 }
 .portfolio-link {
   display: block;
   text-decoration: none;
+  transition: var(--timing-cubic-bezier);
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: var(--timing-cubic-bezier);
+    
 }
 .portfolio-title {
   color: var(--primary-text-color);
@@ -614,13 +616,14 @@ body {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
+  
 }
 .portfolio-card {
   padding: 20px 24px;
-  border-right: 1px solid var(--team-background-color);
-  border-bottom: 1px solid var(--team-background-color);
-  border-left: 1px solid var(--team-background-color);
-}
+  border-right: 1px solid var(--border-card-portfolio);
+  border-bottom: 1px solid var(--border-card-portfolio);
+  border-left: 1px solid var(--border-card-portfolio);
+} 
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
