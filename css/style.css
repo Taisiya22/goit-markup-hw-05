@@ -76,11 +76,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  transition: var(--timing-cubic-bezier);
 }
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
-  transition: var(--timing-cubic-bezier);
+  
 }
 .logo-web {
   padding: 25px 0px;
@@ -112,11 +113,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: var(--timing-cubic-bezier);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: var(--timing-cubic-bezier);
+  
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -205,12 +207,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: var(--timing-cubic-bezier);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hover-hero-button);
   color: var(--white-text-color);
-  transition: var(--timing-cubic-bezier);
 }
 .hero-btn:active {
   background-color: var(--hover-hero-button);
@@ -361,12 +363,12 @@ body {
   background-color: var(--team-list-background-color);
   border-radius: 50%;
   fill: var(--fill-svg-color);
+  transition: var(--timing-cubic-bezier);
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  fill: var(--white-text-color);
-  transition: var(--timing-cubic-bezier);
+  fill: var(--white-text-color); 
 }
 
 /* постійні клієнти */
@@ -388,12 +390,12 @@ body {
   width: 100%;
   height: 100%;
   fill: var(--fill-svg-color);
+  transition: var(--timing-cubic-bezier);
 }
 .clients-icon-link:hover,
 .clients-icon-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition: var(--timing-cubic-bezier);
 }
 /* footer */
 .footer {
@@ -408,11 +410,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  transition: var(--timing-cubic-bezier);
 }
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent-color);
-  transition: var(--timing-cubic-bezier);
 }
 .address {
   margin-top: 20px;
@@ -425,22 +427,22 @@ body {
   font-style: normal;
   line-height: 1.71;
   text-decoration: none;
+  transition: var(--timing-cubic-bezier);
 }
 .link-address:hover,
 .link-address:focus {
   color: var(--accent-color);
-  transition: var(--timing-cubic-bezier);
 }
 .footer .link {
   color: var(--footer-text-color-tel-mail);
   font-style: normal;
   line-height: 1.71;
   text-decoration: none;
+  transition: var(--timing-cubic-bezier);
 }
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
-  transition: var(--timing-cubic-bezier);
 }
 .footer-box {
   display: flex;
@@ -477,11 +479,11 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--white-text-color);
+  transition: var(--timing-cubic-bezier);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
-  transition: var(--timing-cubic-bezier);
 }
 
 /* backdrop */
@@ -497,8 +499,7 @@ body {
 }
 .backdrop.is-hidden {
   opacity: 0;
-  pointer-events: none;
-  visibility: hidden; 
+  pointer-events: none; 
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
@@ -520,7 +521,6 @@ body {
   transition: transform var(--timing-cubic-bezier),
   opacity var(--timing-cubic-bezier);
 
-  cursor: pointer;
 }
 .close-modal {
   display: flex;
@@ -535,6 +535,8 @@ body {
   margin-right: 8px;
   margin-top: 8px;
   margin-left: auto;
+
+  cursor: pointer;
 
 }
 /* portfolio */
@@ -562,6 +564,7 @@ body {
   text-align: center;
   cursor: pointer;
   background-color: var(--team-background-color);
+  transition: var(--timing-cubic-bezier);
 }
 .portfolio-item-btn:hover,
 .portfolio-item-btn:focus {
@@ -569,7 +572,7 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: var(--timing-cubic-bezier);
+    
 }
 .portfolio-item-btn:active {
   color: var(--white-text-color);
@@ -641,5 +644,4 @@ body {
 .portfolio-link:hover .thumb-description,
 .portfolio-link:focus .thumb-description {
   transform: translateY(0);
-  transition: transform var(--timing-cubic-bezier);
 }
