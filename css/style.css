@@ -503,11 +503,12 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--timing-cubic-bezier);
+  transition: opacity var(--timing-cubic-bezier), visibility var(--timing-cubic-bezier);
 }
 .backdrop.is-hidden {
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
+  visibility: hidden; 
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
@@ -649,7 +650,7 @@ body {
   color: var(--white-text-color);
   padding: 63px 24px;
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--timing-cubic-bezier);
 }
 .portfolio-link:hover .thumb-description,
